@@ -1,0 +1,15 @@
+# 数据集根目录：相对本仓库 configs/ 目录的路径（原绝对路径: D:\software\yolo\datasets\fruit_yellow\dataset）
+# 注意：Ultralytics 解析 data.yaml 中的相对 path 时以 settings 的 datasets_dir 为基准，
+#       若训练时报数据集不存在，请把 path 改成绝对路径，或直接：
+#       python scripts/train.py --data <本文件绝对路径>
+path: ../datasets/fruit_yellow/dataset
+train: images/train
+val: images/val
+test: images/test
+nc: 5
+names:
+  0: apple_yellow
+  1: lemon
+  2: mango
+  3: pear_yellow
+  4: pomelo

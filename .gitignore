@@ -1,0 +1,77 @@
+# ============================================================
+# YOLOv8 黄色水果五类检测 —— 项目忽略规则
+# 原则：代码 / 配置 / 文档 / 少量示例图 进仓库；
+#       数据集、权重、部署产物等大文件与涉版权素材一律排除。
+# ============================================================
+
+# ---------- 数据集与原始素材（体积大 / 网络图有版权风险）----------
+datasets/
+raw_photos/
+web_raw/
+prelabel/
+prelabel_synth/
+prelabel_synth_holdout/
+*_prelabel_draft_backup/
+
+# ---------- 训练产物与权重 ----------
+runs/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.tflite
+*.engine
+
+# ---------- 部署中间产物（大文件，可通过脚本重新生成）----------
+*.onnx
+*.bin
+*.hef
+*.rknn
+*.mnn
+calib/
+calib_x5/
+calib_hailo/
+
+# ---------- 脚本中间产物与部署物料（大文件，可由脚本重新生成）----------
+assets/
+output/
+
+# ---------- 日志与缓存 ----------
+*.log
+*.cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+ENV/
+conda-meta/
+
+# ---------- 工具自动生成（含本机绝对路径）----------
+Ultralytics/
+runs/*/weights/
+
+# ---------- 编辑器与 IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*.code-workspace
+
+# ---------- 操作系统 ----------
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------- 例外：允许文档配图进仓库 ----------
+!docs/images/
+!docs/images/*.jpg
+!docs/images/*.jpeg
+!docs/images/*.png
+!docs/images/*.webp
