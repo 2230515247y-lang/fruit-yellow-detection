@@ -1,14 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 2e55e772cb5d0bb106e5d06c937dff97_d40682f8c3b911f1a05452540064ee0f
-    ReservedCode1: VZKYqyAKQsmTtpZGykEL8uiYTJRjiQ2CoBpSx5E8+FlcfCAzY1nzpxU53Eqb3dK2ZtO7ANlSpRn4e+mFdE47c1ZiTk+upE+Qj6Gu1z53eMhtYRQhSlBv3Qyg4M63Ts5N/RNXkcg75g7TfLMLRZQERogEQg3ArYRkK0sCK4BikEhmXynZNE0ZAJjO67k=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 2e55e772cb5d0bb106e5d06c937dff97_d40682f8c3b911f1a05452540064ee0f
-    ReservedCode2: VZKYqyAKQsmTtpZGykEL8uiYTJRjiQ2CoBpSx5E8+FlcfCAzY1nzpxU53Eqb3dK2ZtO7ANlSpRn4e+mFdE47c1ZiTk+upE+Qj6Gu1z53eMhtYRQhSlBv3Qyg4M63Ts5N/RNXkcg75g7TfLMLRZQERogEQg3ArYRkK0sCK4BikEhmXynZNE0ZAJjO67k=
----
-
 # 黄色水果五类检测：从数据集构建到 RDK X5 边缘部署
 
 基于 **YOLOv8s** 的黄色水果目标检测项目，完整覆盖：素材采集与自动预标注 → 人工复核 → 多果拼接合成 → 数据集分层划分 → 训练与评估 → 双版本 ONNX 导出 → RDK X5 BPU 量化编译 → 板端 int8 推理验证 → USB 摄像头实时检测。
@@ -249,4 +238,3 @@ python runtime_py/usb_cam_demo.py --show --fullscreen
 ## License
 
 MIT
-*（内容由AI生成，仅供参考）*
